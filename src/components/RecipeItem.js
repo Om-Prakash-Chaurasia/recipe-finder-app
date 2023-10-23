@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-
 import { BsPerson, BsClock } from "react-icons/bs";
 import { GiKnifeFork } from "react-icons/gi";
 import { TiTick } from "react-icons/ti";
-import { ImSpinner9 } from "react-icons/im";
+import { ImSpinner3 } from "react-icons/im";
 
 const RecipeItem = ({ favouriteHadler, savedItems }) => {
     const [itemSavedStatus, setItemSavedStatus] = useState(null);
@@ -44,7 +43,7 @@ const RecipeItem = ({ favouriteHadler, savedItems }) => {
                             {error}
                         </span>
                     ) : (
-                        <ImSpinner9 className='animate-spin text-center inline-block' />
+                        <ImSpinner3 className='animate-spin text-center inline-block' />
                     )}
                 </p>
             )) || (
